@@ -22,7 +22,7 @@ body {
 .wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .nav {
@@ -87,8 +87,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fafafb;
   border-radius: 2rem;
+  overflow: hidden;
 }
 .hero__info {
   display: -webkit-box;
@@ -98,45 +103,150 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .hero__hola {
+  position: relative;
   font-weight: bold;
-  font-size: 6.4rem;
-  margin-bottom: 2rem;
+  font-size: 4rem;
+  margin: 2rem 0;
 }
 .hero__welcome-text {
-  font-size: 4rem;
+  font-size: 2.4rem;
   margin-bottom: 4rem;
 }
 .hero__text {
   color: #665f82;
   line-height: 28px;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
 }
 .hero__btns {
-  margin-bottom: 10rem;
-  font-size: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
 }
 .hero__btn {
   text-decoration: none;
 }
 .hero__btn--hire {
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   background-color: #0d1321;
   color: white;
   border-radius: 1.6rem;
+  margin-bottom: 1rem;
 }
 .hero__btn--see {
   color: #0d1321;
   padding: 1rem 2rem;
   border-radius: 1.6rem;
 }
+.hero__photo {
+  margin: 0 auto;
+}
 
+.aboutme {
+  background-color: #fff;
+  height: 600px;
+}
+
+.aboutme {
+  background-color: #0D1321;
+  height: 800px;
+}
+
+@media (min-width: 576px) {
+  .hero__hola {
+    font-size: 4.2rem;
+  }
+  .hero__welcome-text {
+    font-size: 2.6rem;
+  }
+  .hero__text {
+    max-width: 500px;
+  }
+  .hero__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .hero__hola {
+    font-size: 4.8rem;
+  }
+  .hero__welcome-text {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .hero__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .hero__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    text-align: left;
+    padding: 0 4rem;
+    margin-bottom: 5rem;
+  }
+  .hero__hola {
+    font-size: 5.2rem;
+  }
+  .hero__welcome-text {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__hola {
+    font-size: 5.8rem;
+  }
+  .hero__welcome-text {
+    font-size: 3.2rem;
+  }
+  .hero__text {
+    max-width: 600px;
+  }
+  .hero__info {
+    margin-bottom: 9rem;
+  }
+}
 @media (max-width: 768px) {
   .nav {
     padding-right: 1rem;
