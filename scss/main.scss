@@ -73,47 +73,41 @@ body {
 .hero {
 	background-color: rgb(255, 255, 255);
 
+
 	&__section {
 		padding: 0 2rem;
-		background-color: #ffffff;
-		// background-color: #665f82;
 	}
 
 	&__main {
 		display: flex;
 		flex-direction: column;
-		background-color: #fafafb;		
+		background-color: #fafafb;	
 		border-radius: 2rem;
 		overflow: hidden;
-		// background-color: #ff8d83;
+		background-color: red;
 	}
 
-	&__info {		
+	&__info {
 		display: flex;
 		flex-direction: column;
 		text-align: center;
 		align-items: center;
-		// background-color: #8e77ea;
 	}
 
 	&__hola {
-		position: relative;
-		// background-color: #9d827f;
 		font-weight: bold;
 		font-size: 4rem;
 		margin: 2rem 0;
 	}
 
 	&__welcome-text {
-		// background-color: aquamarine;
 		font-size: 2.4rem;
 		margin-bottom: 4rem;
 	}
 
 	&__text {
-		// background-color: rgb(246, 244, 132);
 		color: #665f82;
-		line-height: 28px;
+		line-height: 2.8rem;
 		margin-bottom: 4rem;
 		font-size: 1.6rem;
 	}
@@ -138,8 +132,7 @@ body {
 		}
 
 		&--see {
-			color: #0d1321;
-			// border: 2px solid red;
+			color: #0d1321;			
 			padding: 1rem 2rem;
 			border-radius: 1.6rem;
 		}
@@ -147,37 +140,81 @@ body {
 
 	&__photo {
 		margin: 0 auto;
+		
+	}
+
+	&__statistic {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 2rem;
+	}
+
+	&__stat {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		height: 15rem;
+		width: 15rem;
+	}
+
+	&__number {
+		font-size: 4rem;
+		font-weight: bold;
+		margin-bottom: 1rem;
+		color: #0d1321;
+	}
+
+	&__stat-text {
+		color: #989dbb;
+	}
+
+	&__line {
+		width: 100%;
+		height: 1px;
+		background-color: #e0e2ef;
 	}
 }
 
 .aboutme {
-	background-color: #fff;
-	height: 600px;
+	&__section {
+		background-color: #0f1221;
+	}
+
+	&__main {
+		padding: 5rem 2rem;
+	}
+
+	&__main-text {
+		font-size: 2.8rem;
+		padding: 4rem 0;
+		color: #ea8c82;
+	}
+
+	&__text {
+		color: white;
+		line-height: 2.8rem;
+		font-size: 1.4rem;
+		padding: 2rem 0;
+		max-width: 600px;
+	}
 }
 
-
-.aboutme {
-
-	background-color: #0D1321;
-	height: 800px;
-}
 // MEDIA
 
 @media (min-width: 576px) {
 	.hero {
-
 		&__hola {
 			font-size: 4.2rem;
 		}
 
 		&__welcome-text {
 			font-size: 2.6rem;
-			
 		}
 
 		&__text {
 			max-width: 500px;
-			
 		}
 
 		&__btns {
@@ -185,34 +222,67 @@ body {
 			flex-direction: row;
 			justify-content: center;
 		}
+
+		&__stats {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		&__stat {
+			min-width: 250px;
+		}
+	}
+
+	.aboutme {
+		&__main-text {
+			font-size: 3rem;
+		}
 	}
 }
 
 @media (min-width: 768px) {
-
 	.hero {
-
 		&__hola {
-			font-size: 4.8rem;					
+			font-size: 4.8rem;
 		}
 
-		&__welcome-text {			
+		&__welcome-text {
 			font-size: 2.8rem;
 		}
 
+		&__statistic {
+			display: flex;
+			justify-content: space-around;
+		}
 
-		
+		&__stats {
+			display: flex;
+			flex-wrap: nowrap;
+			width: 100%;
+		}
+
+		&__stat {
+			min-width: 140px;
+		}
+	}
+
+	.aboutme {
+		&__main-text {
+			font-size: 3.2rem;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
 	}
 }
 
 @media (min-width: 992px) {
-
 	.hero {
-
 		&__main {
 			display: flex;
-			flex-direction: row;			
-			
+			flex-direction: row;
 		}
 
 		&__info {
@@ -223,49 +293,43 @@ body {
 			text-align: left;
 			padding: 0 4rem;
 			margin-bottom: 5rem;
-			
 		}
 
 		&__hola {
 			font-size: 5.2rem;
-					
-			
-		}
-		
-		&__welcome-text {			
-			font-size: 3rem;			
 		}
 
+		&__welcome-text {
+			font-size: 3rem;
+		}
 
+		&__stat {
+			min-width: 240px;
+		}
+	}
 
-		
+	.aboutme {
+		&__text {
+			max-width: none;
+			width: 60%;
+		}
 	}
 }
 
 @media (min-width: 1200px) {
-	
 	.hero {
-
-		
 		&__hola {
-			font-size: 5.8rem;					
+			font-size: 5.8rem;
 		}
 
-		&__welcome-text {			
+		&__welcome-text {
 			font-size: 3.2rem;
-		}
-
-		&__text {
-			max-width: 600px;
-		}
+		}	
 
 		&__info {
 			margin-bottom: 9rem;
 		}
-
 	}
-
-
 }
 
 @media (max-width: 768px) {
@@ -313,5 +377,52 @@ body {
 	}
 }
 
+// .statistic {
+// 	height: 600px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	background-color: #ff8d83;
 
+// }
 
+// .container {
+
+// 	height: 500px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-around;
+// 	border: 5px solid red;
+// 	flex-direction: column;
+
+// }
+
+// .stats {
+// 	width: 100%;
+// 	height: 300px;
+// 	background-color: #665f82;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-around;
+// }
+
+// .stats div {
+// 	width: 200px;
+// 	height: 200px;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: space-around;
+// 	flex-direction: column;
+// 	text-align: center;
+// 	// gap: 20px;
+// 	border: 2px solid yellow;
+// }
+
+// .sta {
+// 	color: blue;
+// 	font-size: 50px;
+// }
+
+// .abc {
+// 	height: 100vh;
+// }
