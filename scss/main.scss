@@ -73,7 +73,6 @@ body {
 .hero {
 	background-color: rgb(255, 255, 255);
 
-
 	&__section {
 		padding: 0 2rem;
 	}
@@ -81,10 +80,9 @@ body {
 	&__main {
 		display: flex;
 		flex-direction: column;
-		background-color: #fafafb;	
+		background-color: #fafafb;
 		border-radius: 2rem;
 		overflow: hidden;
-		background-color: red;
 	}
 
 	&__info {
@@ -132,22 +130,21 @@ body {
 		}
 
 		&--see {
-			color: #0d1321;			
+			color: #0d1321;
 			padding: 1rem 2rem;
 			border-radius: 1.6rem;
 		}
 	}
 
 	&__photo {
-		margin: 0 auto;
-		
+		margin: 0 auto -0.4rem;
 	}
 
 	&__statistic {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 2rem;
+		padding: 5rem 0;
 	}
 
 	&__stat {
@@ -168,6 +165,8 @@ body {
 
 	&__stat-text {
 		color: #989dbb;
+		text-transform: uppercase;
+		font-size: 1.2rem;
 	}
 
 	&__line {
@@ -178,9 +177,7 @@ body {
 }
 
 .aboutme {
-	&__section {
-		background-color: #0f1221;
-	}
+	background-color: #0f1221;
 
 	&__main {
 		padding: 5rem 2rem;
@@ -198,6 +195,82 @@ body {
 		font-size: 1.4rem;
 		padding: 2rem 0;
 		max-width: 600px;
+	}
+}
+
+.contact {
+	background-color: #fbc0ba;
+
+	&__section {
+		padding: 5rem 0;
+	}
+
+	&__box {
+		padding: 5rem 2rem;
+	}
+
+	&__main-text {
+		font-size: 3rem;		
+	}
+
+	&__form-box {
+		max-width: 500px;
+		text-align: right;
+	}
+	
+	&__form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 5rem;
+	}
+
+	&__text-area {
+		background-color: #FBC0BA;
+		margin: 2rem 0;
+		border: none;
+		font-size: 1.4rem;
+		border-bottom: 1px solid #0D1321;
+	}
+	&__text-area::placeholder {
+		color: #0d1321;
+		opacity: 1;
+		font-family: "Lato", sans-serif;
+	}
+
+	&__btn {
+		
+		padding: 1rem 2rem;
+		border-radius: 1.6rem;
+		border: 1px solid #0d1321;
+		color: #0d1321;
+		margin-top: 2rem;
+		background-color: #FBC0BA;		
+	}
+
+	
+	
+}
+
+.footer {
+	background-color: #FBC0BA;
+	
+	&__body {
+		padding: 0 2rem;
+		text-align: center;
+	}
+
+	&__link {
+		padding: 1rem 3rem;
+		color: #0d1321;
+
+		&:hover {
+			color: #fafafb;
+		}
+	}
+
+	&__create {
+		font-size: 1.4rem;
+		padding: 3rem 0;
 	}
 }
 
@@ -232,11 +305,19 @@ body {
 		&__stat {
 			min-width: 250px;
 		}
+
+		
 	}
 
 	.aboutme {
 		&__main-text {
 			font-size: 3rem;
+		}
+	}
+
+	.contact {
+		&__main-text {
+			font-size: 3.2rem;		
 		}
 	}
 }
@@ -276,6 +357,12 @@ body {
 			font-size: 1.6rem;
 		}
 	}
+
+	.contact {
+		&__main-text {
+			font-size: 3.4rem;		
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -306,12 +393,22 @@ body {
 		&__stat {
 			min-width: 240px;
 		}
+
+		&__stat-text {			
+			font-size: 1.6rem;
+		}
 	}
 
 	.aboutme {
 		&__text {
 			max-width: none;
 			width: 60%;
+		}
+	}
+
+	.contact {
+		&__main-text {
+			font-size: 3.6rem;		
 		}
 	}
 }
@@ -324,10 +421,16 @@ body {
 
 		&__welcome-text {
 			font-size: 3.2rem;
-		}	
+		}
 
 		&__info {
 			margin-bottom: 9rem;
+		}
+	}
+
+	.contact {
+		&__main-text {
+			font-size: 3.8rem;		
 		}
 	}
 }

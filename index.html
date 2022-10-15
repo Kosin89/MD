@@ -18,6 +18,7 @@
 
 
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/7726142a02.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 
                 <ul class="nav__menu">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">About me</a>
+                        <a href="#aboutme" class="nav__link">About me</a>
                     </li>
                     <li class="nav__item">
                         <a href="index.html" class="nav__link">Portfolio</a>
@@ -57,7 +58,7 @@
                             incidunt neque quibusdam praesentium officia quod ut omnis animi nam placeat perferendis
                             ipsa, ducimus eos, provident velit et quae sapiente.</p>
                         <div class="hero__btns">
-                            <a href="#" class="hero__btn hero__btn--hire"><span class="hero__btn--hire-logo"></span>Hire
+                            <a href="#contact" class="hero__btn hero__btn--hire"><span class="hero__btn--hire-logo"></span>Hire
                                 Me</a>
                             <a href="#" class="hero__btn hero__btn--see">See design work</a>
                         </div>
@@ -93,8 +94,8 @@
                             <p class="hero__stat-text">Projects completed</p>
                         </div>
                         <div class="hero__stat">
-                            <span class="hero__number hero__stats--four">100</span>
-                            <p class="hero__stat-text">% satisfaction</p>
+                            <span class="hero__number hero__stats--four">100%</span>
+                            <p class="hero__stat-text">satisfaction</p>
                         </div>
 
                     </div>
@@ -103,7 +104,7 @@
             </div>
         </section>
 
-        <section class="aboutme">
+        <section id="aboutme" class="aboutme">
             <div class="aboutme__section">
                 <div class="aboutme__main wrapper">
                     <h2 class="aboutme__main-text">Me in a nutshell.</h2>
@@ -128,7 +129,42 @@
 
 
 
+
+        <section id="contact" class="contact">
+            <div class="contact__section">
+                <div class="contact__box wrapper">
+                    <h2 class="contact__main-text">Let's Talk.</h2>
+                    <div class="contact__form-box">
+                        <form class="contact__form" action="">
+                            <input type="text" class="contact__text-area contact__text-area--name" placeholder="Name">
+                            <input type="email" class="contact__text-area contact__text-area--email"
+                                placeholder="Email">
+                            <textarea class="contact__text-area contact__text-area--message" placeholder="Message"
+                                cols="30" rows="1"></textarea>
+                        </form>
+                        <button class="contact__btn">Send</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__section">
+            <div class="footer__body wrapper">
+                <div class="footer__links">
+                    <a class="footer__link" href="https://www.linkedin.com/in/magdalena-drabek/?locale=en_US" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="footer__link" href="https://www.behance.net/magdalena-d" target="_blank"><i class="fa-brands fa-behance"></i></a>
+                    <a class="footer__link" href="https://dribbble.com/MagdalenaD" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                </div>
+                <div class="footer__create">
+                    <p class="footer__create--person">Magdalena Drabek Digital Design &copy; 2022</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -143,7 +179,7 @@
 <div class="container statistic__boxs wrapper">
     <div class="stats statistic__stats">
             <div class="static-box">
-                <span class="sta statistic__sta" data-max="4">0</span>
+                <span class="sta statistic__sta" data-max="4">0<span>+</span></span>
                 <p>years experience</p>
             </div>
             <div class="static-box">
