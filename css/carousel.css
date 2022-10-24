@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+
+* {
+	font-family: "Nunito", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.2s linear;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1400px;
+}
+
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+
+
+.portfolio {
+	background-color: white;
+    background-color: rgb(59, 167, 59);
+
+}
+
+.portfolio__main {
+    padding: 0 2rem;
+}
+
+.portfolio__box {
+    padding: 2rem 2rem;
+}
+
+
+.portfolio__slide {	
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.carousell__image {
+	position: relative;
+    border-radius: 1.6rem;
+    width: 100%;
+}
+
+.team-slider .swiper-button-next {
+	color: #444;
+}
+
+.team-slider .swiper-button-prev {
+	color: #444;
+}
+
+
+.portfolio__navi {
+	background-color: aqua;
+	position: relative;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.portfolio__navi-item {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	color: red;
+	font-size: 17px;
+	border-radius: 5px;
+	margin: 0 5px;
+	transition: all 0.3s ease;
+}
+.portfolio__navi-item:hover {
+	background: rgba(184, 31, 23, 0.3);
+}
+#home:checked ~ .navi label.home,
+#blog:checked ~ .navi label.blog,
+#code:checked ~ .navi label.code,
+#help:checked ~ .navi label.help,
+#about:checked ~ .navi label.about {
+	color: rgb(23, 70, 142);
+}
+
+.slider {
+	position: absolute;
+	height: 100%;
+	width: 20%;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	border-radius: 5px;
+	background: #ffffff;
+	transition: all 0.3s ease;
+}
+input[type="radio"] {
+	display: none;
+}
+#blog:checked ~ .navi .slider {
+	left: 20%;
+}
+#code:checked ~ .navi .slider {
+	left: 40%;
+}
+#help:checked ~ .navi .slider {
+	left: 60%;
+}
+#about:checked ~ .navi .slider {
+	left: 80%;
+}
+.portfolio__content {
+	display: none;
+	background: rgb(136, 23, 23);
+}
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5 {
+	display: block;
+}
+

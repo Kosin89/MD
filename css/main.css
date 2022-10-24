@@ -199,7 +199,7 @@ body {
   background-color: #e0e2ef;
 }
 
-.aboutme {
+.aboutme__section {
   background-color: #0f1221;
 }
 .aboutme__main {
@@ -216,6 +216,149 @@ body {
   font-size: 1.4rem;
   padding: 2rem 0;
   max-width: 600px;
+}
+.aboutme__photo {
+  background-color: #fff;
+  text-align: center;
+}
+.aboutme__photo-box {
+  padding: 5rem 2rem;
+}
+.aboutme__photo-img {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+}
+
+.portfolio__section {
+  background-color: white;
+}
+.portfolio__main {
+  padding: 2rem 2rem 4rem 2rem;
+}
+.portfolio__main-text {
+  padding: 2rem 0;
+  font-size: 2.8rem;
+}
+.portfolio__navi {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+.portfolio__navi-item {
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 1;
+  color: rgba(13, 19, 33, 0.5137254902);
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.portfolio__navi-item:hover {
+  color: #0d1321;
+}
+.portfolio__content {
+  display: none;
+}
+.portfolio__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.portfolio__slide--image {
+  position: relative;
+  border-radius: 1.6rem;
+  width: 100%;
+}
+.portfolio__description {
+  margin: 2rem 0;
+}
+.portfolio__description--task {
+  padding-bottom: 1.5rem;
+  color: #ea8c83;
+  font-size: 1.6rem;
+}
+.portfolio__description--company {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.slider {
+  position: absolute;
+  height: 50%;
+  width: 20%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: yellow;
+  color: red;
+}
+
+.team-slider .swiper-button-next,
+.team-slider .swiper-button-prev {
+  color: #444;
+  padding-bottom: 5rem;
+  top: 45%;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+#blog:checked ~ .navi .slider {
+  left: 20%;
+}
+
+#code:checked ~ .navi .slider {
+  left: 40%;
+}
+
+#help:checked ~ .navi .slider {
+  left: 60%;
+}
+
+#about:checked ~ .navi .slider {
+  left: 80%;
+}
+
+#home:checked ~ section .content-1,
+#blog:checked ~ section .content-2,
+#code:checked ~ section .content-3,
+#help:checked ~ section .content-4,
+#about:checked ~ section .content-5 {
+  display: block;
 }
 
 .contact {
@@ -245,11 +388,11 @@ body {
   margin-top: 5rem;
 }
 .contact__text-area {
-  background-color: #FBC0BA;
+  background-color: #fbc0ba;
   margin: 2rem 0;
   border: none;
   font-size: 1.4rem;
-  border-bottom: 1px solid #0D1321;
+  border-bottom: 1px solid #0d1321;
 }
 .contact__text-area::-webkit-input-placeholder {
   color: #0d1321;
@@ -282,11 +425,11 @@ body {
   border: 1px solid #0d1321;
   color: #0d1321;
   margin-top: 2rem;
-  background-color: #FBC0BA;
+  background-color: #fbc0ba;
 }
 
 .footer {
-  background-color: #FBC0BA;
+  background-color: #fbc0ba;
 }
 .footer__body {
   padding: 0 2rem;
@@ -295,6 +438,8 @@ body {
 .footer__link {
   padding: 1rem 3rem;
   color: #0d1321;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .footer__link:hover {
   color: #fafafb;
@@ -343,6 +488,18 @@ body {
   }
   .contact__main-text {
     font-size: 3.2rem;
+  }
+  .portfolio__main-text {
+    font-size: 3rem;
+  }
+  .portfolio__navi-item {
+    font-size: 1.4rem;
+  }
+  .portfolio__description--task {
+    font-size: 1.6rem;
+  }
+  .portfolio__description--company {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 768px) {

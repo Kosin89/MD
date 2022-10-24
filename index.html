@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/7726142a02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -32,10 +33,10 @@
                         <a href="#aboutme" class="nav__link">About me</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Portfolio</a>
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
                 <div class="nav__hamburger">
@@ -58,7 +59,8 @@
                             incidunt neque quibusdam praesentium officia quod ut omnis animi nam placeat perferendis
                             ipsa, ducimus eos, provident velit et quae sapiente.</p>
                         <div class="hero__btns">
-                            <a href="#contact" class="hero__btn hero__btn--hire"><span class="hero__btn--hire-logo"></span>Hire
+                            <a href="#contact" class="hero__btn hero__btn--hire"><span
+                                    class="hero__btn--hire-logo"></span>Hire
                                 Me</a>
                             <a href="#" class="hero__btn hero__btn--see">See design work</a>
                         </div>
@@ -122,13 +124,479 @@
                         nam totam ipsum voluptates sed?</p>
                 </div>
             </div>
+            <div class="aboutme__photo">
+                <div class="aboutme__photo-box wrapper">
+                    <img class="aboutme__photo-img" src="./img/image/imphone.jpg" alt="">
+                </div>
+            </div>
+
         </section>
 
+        <section id="portfolio" class="portfolio">
+
+            <div class="portfolio__section">
+                <div class="portfolio__main wrapper">
+                    <h2 class="portfolio__main-text">My latest works</h2>
+                    <input class="portfolio__slider" type="radio" name="slider" id="blog">
+                    <input class="portfolio__slider" type="radio" name="slider" checked id="home">
+                    <input class="portfolio__slider" type="radio" name="slider" id="code">
+                    <input class="portfolio__slider" type="radio" name="slider" id="help">
+                    <input class="portfolio__slider" type="radio" name="slider" id="about">
+                    <div class="navi portfolio__navi">
+                        <label for="home" class="all portfolio__navi-item">All</label>
+                        <label for="blog" class="blog portfolio__navi-item">Mobile & web design</label>
+                        <label for="code" class="code portfolio__navi-item">Websites</label>
+                        <label for="help" class="help portfolio__navi-item">Buisness card & logos</label>
+                        <label for="about" class="about portfolio__navi-item">Other</label>
+                    </div>
+
+                    <section class="portfolio__boxes">
+                        <div class="content content-1 portfolio__content portfolio__contant--all">
+                            <div class="team portfolio__box">
+                                <div class="swiper team-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/11.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">OnTracka
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/12.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile & web app, website, logo
+                                                </p>
+                                                <p class="portfolio__description--company">CarCare
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/13.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app, logo</p>
+                                                <p class="portfolio__description--company">AutoStep
+                                            </div>
+                                        </div>
 
 
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/14.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Sagas
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/15.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Classic Cars
+                                                </p>
+                                            </div>
+                                        </div>
 
 
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/16.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">AskBelle
+                                                </p>
+                                            </div>
+                                        </div>
 
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/17.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Classic Cars
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/21.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile & web app, website</p>
+                                                <p class="portfolio__description--company">Carkit
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/22.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app, website, logo
+                                                </p>
+                                                <p class="portfolio__description--company">Tipping Point Earth
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/23.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Website</p>
+                                                <p class="portfolio__description--company">EMCO Media
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/31.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card, website</p>
+                                                <p class="portfolio__description--company">Personal
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/32.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Branding, website
+                                                </p>
+                                                <p class="portfolio__description--company">WAT KAM CHU
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/33.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card</p>
+                                                <p class="portfolio__description--company">Single Hop Media
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/34.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card, website</p>
+                                                <p class="portfolio__description--company">Personal
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/41.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Web app</p>
+                                                <p class="portfolio__description--company">TopTal
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/42.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Website
+                                                </p>
+                                                <p class="portfolio__description--company">Exercise
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/43.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Exercise
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/44.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Exercise
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/45.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Annual report (print)</p>
+                                                <p class="portfolio__description--company">BEST - Student organization
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    
+
+
+                                    <div class="swiper-button-next portfolio__swiper portfolio__swiper--next"></div>
+                                    <div class="swiper-button-prev portfolio__swiper portfolio__swiper--prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content content-2 portfolio__content portfolio__contant--mobile-webapp">
+                            <div class="team portfolio__box">
+                                <div class="swiper team-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/11.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">OnTracka
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/12.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile & web app, website, logo
+                                                </p>
+                                                <p class="portfolio__description--company">CarCare
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/13.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app, logo</p>
+                                                <p class="portfolio__description--company">AutoStep
+                                            </div>
+                                        </div>
+
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/14.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Sagas
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/15.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Classic Cars
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/16.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">AskBelle
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/17.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Classic Cars
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="swiper-button-next portfolio__swiper portfolio__swiper--next"></div>
+                                    <div class="swiper-button-prev portfolio__swiper portfolio__swiper--prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content content-3 portfolio__content portfolio__contant--websites">
+                            <div class="team portfolio__box">
+                                <div class="swiper team-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/21.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile & web app, website</p>
+                                                <p class="portfolio__description--company">Carkit
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/22.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app, website, logo
+                                                </p>
+                                                <p class="portfolio__description--company">Tipping Point Earth
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/23.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Website</p>
+                                                <p class="portfolio__description--company">EMCO Media
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <div class="swiper-button-next portfolio__swiper portfolio__swiper--next"></div>
+                                        <div class="swiper-button-prev portfolio__swiper portfolio__swiper--prev"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content content-4 portfolio__content portfolio__contant--buisness-card">
+                            <div class="team portfolio__box">
+                                <div class="swiper team-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/31.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card, website</p>
+                                                <p class="portfolio__description--company">Personal
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/32.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Branding, website
+                                                </p>
+                                                <p class="portfolio__description--company">WAT KAM CHU
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/33.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card</p>
+                                                <p class="portfolio__description--company">Single Hop Media
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/34.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Logo, business card, website</p>
+                                                <p class="portfolio__description--company">Personal
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                        <div class="swiper-button-next portfolio__swiper portfolio__swiper--next"></div>
+                                        <div class="swiper-button-prev portfolio__swiper portfolio__swiper--prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content-5 portfolio__content portfolio__contant--other">
+                            <div class="team portfolio__box">
+                                <div class="swiper team-slider">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/41.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Web app</p>
+                                                <p class="portfolio__description--company">TopTal
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/42.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Website
+                                                </p>
+                                                <p class="portfolio__description--company">Exercise
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/43.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Exercise
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/44.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Mobile app</p>
+                                                <p class="portfolio__description--company">Exercise
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide slide portfolio__slide">
+                                            <img src="./img/portfolio/small/45.jpg" class="portfolio__slide--image"
+                                                alt="">
+                                            <div class="portfolio__description">
+                                                <p class="portfolio__description--task">Annual report (print)</p>
+                                                <p class="portfolio__description--company">BEST - Student organization
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                        <div class="swiper-button-next portfolio__swiper portfolio__swiper--next"></div>
+                                        <div class="swiper-button-prev portfolio__swiper portfolio__swiper--prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
 
         <section id="contact" class="contact">
             <div class="contact__section">
@@ -154,9 +622,12 @@
         <div class="footer__section">
             <div class="footer__body wrapper">
                 <div class="footer__links">
-                    <a class="footer__link" href="https://www.linkedin.com/in/magdalena-drabek/?locale=en_US" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a class="footer__link" href="https://www.behance.net/magdalena-d" target="_blank"><i class="fa-brands fa-behance"></i></a>
-                    <a class="footer__link" href="https://dribbble.com/MagdalenaD" target="_blank"><i class="fa-brands fa-dribbble"></i></a>
+                    <a class="footer__link" href="https://www.linkedin.com/in/magdalena-drabek/?locale=en_US"
+                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="footer__link" href="https://www.behance.net/magdalena-d" target="_blank"><i
+                            class="fa-brands fa-behance"></i></a>
+                    <a class="footer__link" href="https://dribbble.com/MagdalenaD" target="_blank"><i
+                            class="fa-brands fa-dribbble"></i></a>
                 </div>
                 <div class="footer__create">
                     <p class="footer__create--person">Magdalena Drabek Digital Design &copy; 2022</p>
@@ -168,32 +639,9 @@
 
 
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/carousel.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
 </html>
-
-
-<!-- <section class="statistic">
-<div class="container statistic__boxs wrapper">
-    <div class="stats statistic__stats">
-            <div class="static-box">
-                <span class="sta statistic__sta" data-max="4">0<span>+</span></span>
-                <p>years experience</p>
-            </div>
-            <div class="static-box">
-                <span class="sta statistic__sta" data-max="20">0</span>
-                <p>years experience</p>
-            </div>
-            <div class="static-box">
-                <span class="sta statistic__sta" data-max="30">0</span>
-                <p>years experience</p>
-            </div>
-            <div class="static-box">
-                <span class="sta statistic__sta" data-max="100">0</span>
-                <p>years experience</p>
-            </div>
-        </div>
-    </div>
-</section> -->
