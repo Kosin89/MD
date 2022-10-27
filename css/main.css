@@ -156,10 +156,16 @@ body {
 }
 .hero__btn--hire {
   margin-bottom: 1rem;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 3rem;
   background-color: #0d1321;
   color: white;
   border-radius: 1.6rem;
+}
+.hero__btn--hire-logo {
+  position: relative;
+  top: 2px;
+  right: 2px;
+  width: 18px;
 }
 .hero__btn--see {
   padding: 1.5rem 2rem;

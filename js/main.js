@@ -47,14 +47,3 @@ let typed = new Typed(".auto-type", {
 
 
 
-let navmenu = document.querySelector(".nav__menu");
-let navitem = document.querySelectorAll(".nav__item");
-
-navitem.forEach(el => {
-	el.addEventListener("click", function (){
-		navmenu.querySelector(".active").classList.remove("active");
-
-		el.classList.add("active");
-	});
-});
-

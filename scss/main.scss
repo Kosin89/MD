@@ -142,10 +142,17 @@ body {
 
 		&--hire {
 			margin-bottom: 1rem;
-			padding: 1.5rem 4rem;
+			padding: 1.5rem 3rem;
 			background-color: #0d1321;
 			color: white;
 			border-radius: 1.6rem;
+		}
+
+		&--hire-logo {
+			position: relative;
+			top: 2px;
+			right: 2px;
+			width: 18px;				
 		}
 
 		&--see {
