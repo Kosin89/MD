@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+[id] {
+  scroll-margin-top: 7rem;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -27,6 +31,10 @@ body {
 
 .nav {
   background-color: rgb(255, 255, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 .nav__bar {
   display: -webkit-box;
@@ -65,6 +73,9 @@ body {
 .nav__link:hover {
   color: #ff8d83;
 }
+.nav ul .active a {
+  color: #ea8c83;
+}
 .nav__hamburger {
   display: none;
 }
@@ -78,6 +89,7 @@ body {
 
 .hero {
   background-color: rgb(255, 255, 255);
+  margin-top: 7rem;
 }
 .hero__section {
   padding: 0 2rem;
@@ -111,6 +123,9 @@ body {
   margin: 2rem 0;
   font-weight: bold;
   font-size: 4rem;
+}
+.hero .typed-cursor {
+  color: #ea8c82;
 }
 .hero__welcome-text {
   margin-bottom: 4rem;
@@ -248,6 +263,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 50px;
   margin-bottom: 2rem;
@@ -335,27 +353,18 @@ input[type=radio] {
   display: none;
 }
 
-#mobile:checked ~ .navi .slider {
-  left: 20%;
-}
-
-#websites:checked ~ .navi .slider {
-  left: 40%;
-}
-
-#branding:checked ~ .navi .slider {
-  left: 60%;
-}
-
-#other:checked ~ .navi .slider {
-  left: 80%;
-}
-
 #mobile:checked ~ section .content-1,
 #websites:checked ~ section .content-2,
 #branding:checked ~ section .content-3,
 #other:checked ~ section .content-4 {
   display: block;
+}
+
+#mobile:checked ~ .navi label.mobile,
+#websites:checked ~ .navi label.websites,
+#branding:checked ~ .navi label.branding,
+#other:checked ~ .navi label.other {
+  color: #0d1321;
 }
 
 .contact {
@@ -482,6 +491,10 @@ input[type=radio] {
   .hero__stat {
     min-width: 250px;
   }
+  .hero__btn--hire {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
   .aboutme__main-text {
     font-size: 3rem;
   }
@@ -532,6 +545,14 @@ input[type=radio] {
   .aboutme__text {
     font-size: 1.6rem;
   }
+  .portfolio__navi {
+    max-width: 500px;
+  }
+  .portfolio__navi-item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
   .contact__main-text {
     font-size: 3.4rem;
   }
@@ -576,7 +597,11 @@ input[type=radio] {
   .hero__stat-text {
     font-size: 1.6rem;
   }
+  .aboutme__main-text {
+    padding-left: 4rem;
+  }
   .aboutme__text {
+    padding-left: 4rem;
     max-width: none;
     width: 60%;
   }

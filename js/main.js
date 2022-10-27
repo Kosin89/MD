@@ -1,5 +1,5 @@
-const hamburger = document.querySelector(".nav__hamburger")
-const navMenu = document.querySelector(".nav__menu")
+let hamburger = document.querySelector(".nav__hamburger")
+let navMenu = document.querySelector(".nav__menu")
 
 hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("active")
@@ -13,7 +13,10 @@ document.querySelectorAll(".nav__link").forEach(n =>
 	})
 )
 
-var swiper = new Swiper(".team-slider", {
+
+
+
+let swiper = new Swiper(".team-slider", {
 	loop: true,
 	grabCursor: true,
 	spaceBetween: 20,
@@ -34,25 +37,24 @@ var swiper = new Swiper(".team-slider", {
 	},
 })
 
-// let section = document.querySelector(".container");
-// let stat = document.querySelectorAll(".stats .sta");
-// let start = false;
 
-// window.onscroll = function(){
-//     if(window.scrollY >= section.offsetTop){
-//         if(!start){
-//             stat.forEach((sta) => startCount(sta));
-//         }
-//         start = true;
-//     }
-// }
+let typed = new Typed(".auto-type", {
+	strings: ["Hola", "Cześć", "Hello"],
+	typeSpeed: 120,
+	backSpeed: 120,
+	loop: true,
+})
 
-// function startCount(el){
-//     let max = el.dataset.max;
-//     let count = setInterval(() => {
-//         el.textContent++;
-//         if(el.textContent == max) {
-//             clearInterval(count);
-//         }
-//     }, 500 / stat);
-// }
+
+
+let navmenu = document.querySelector(".nav__menu");
+let navitem = document.querySelectorAll(".nav__item");
+
+navitem.forEach(el => {
+	el.addEventListener("click", function (){
+		navmenu.querySelector(".active").classList.remove("active");
+
+		el.classList.add("active");
+	});
+});
+

@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+[id] {
+	scroll-margin-top: 7rem;
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -26,6 +30,10 @@ body {
 
 .nav {
 	background-color: rgb(255, 255, 255);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
 
 	&__bar {
 		display: flex;
@@ -55,7 +63,11 @@ body {
 		&:hover {
 			color: #ff8d83;
 		}
-	}
+	}	
+
+	ul .active a {
+		color: #ea8c83;
+	}	
 
 	&__hamburger {
 		display: none;
@@ -68,10 +80,13 @@ body {
 		margin: 0.5rem auto;
 		background-color: black;
 	}
+	
 }
+
 
 .hero {
 	background-color: rgb(255, 255, 255);
+	margin-top: 7rem;	
 
 	&__section {
 		padding: 0 2rem;
@@ -82,7 +97,7 @@ body {
 		flex-direction: column;
 		background-color: #fafafb;
 		border-radius: 2rem;
-		overflow: hidden;
+		overflow: hidden;		
 	}
 
 	&__info {
@@ -96,6 +111,10 @@ body {
 		margin: 2rem 0;
 		font-weight: bold;
 		font-size: 4rem;
+	}
+
+	.typed-cursor {
+		color: #ea8c82;;
 	}
 
 	&__welcome-text {
@@ -132,7 +151,7 @@ body {
 		&--see {
 			padding: 1.5rem 2rem;
 			color: #0d1321;
-			border-radius: 1.6rem;
+			border-radius: 1.6rem;		
 		}
 	}
 
@@ -173,7 +192,7 @@ body {
 		width: 100%;
 		height: 1px;
 		background-color: #e0e2ef;
-	}
+	}	
 }
 
 .aboutme {
@@ -182,7 +201,7 @@ body {
 	}
 
 	&__main {
-		padding: 5rem 2rem;
+		padding: 5rem 2rem;		
 	}
 
 	&__main-text {
@@ -217,7 +236,7 @@ body {
 
 .portfolio {
 	&__section {
-		background-color: white;
+		background-color: white;		
 	}
 
 	&__main {
@@ -233,7 +252,8 @@ body {
 		position: relative;
 		display: flex;
 		align-items: center;
-		width: 100%;
+		justify-content: center;
+		width: 100%;		
 		height: 50px;
 		margin-bottom: 2rem;
 	}
@@ -256,8 +276,8 @@ body {
 
 		&:hover {
 			color: #0d1321;
-		}
-	}
+		}			
+	}	
 
 	&__content {
 		display: none;
@@ -292,7 +312,6 @@ body {
 		}
 	}
 
-
 }
 
 .slider {
@@ -317,18 +336,6 @@ body {
 input[type="radio"] {
 	display: none;
 }
-#mobile:checked ~ .navi .slider {
-	left: 20%;
-}
-#websites:checked ~ .navi .slider {
-	left: 40%;
-}
-#branding:checked ~ .navi .slider {
-	left: 60%;
-}
-#other:checked ~ .navi .slider {
-	left: 80%;
-}
 
 #mobile:checked ~ section .content-1,
 #websites:checked ~ section .content-2,
@@ -336,6 +343,13 @@ input[type="radio"] {
 #other:checked ~ section .content-4 {
 	display: block;
 }
+#mobile:checked ~ .navi label.mobile,
+#websites:checked ~ .navi label.websites,
+#branding:checked ~ .navi label.branding,
+#other:checked ~ .navi label.other {
+	color: #0d1321;
+}
+
 
 .contact {
 	background-color: #fbc0ba;
@@ -443,6 +457,14 @@ input[type="radio"] {
 		&__stat {
 			min-width: 250px;
 		}
+
+		&__btn {	
+
+			&--hire {
+				margin-bottom: 0;	
+				margin-right: 1rem;			
+			}			
+		}
 	}
 
 	.aboutme {
@@ -517,6 +539,18 @@ input[type="radio"] {
 		}
 	}
 
+	.portfolio {
+		
+		&__navi {		
+			max-width: 500px;		
+		}
+
+		&__navi-item {			
+			justify-content: flex-start;
+					
+		}
+	}
+
 	.contact {
 		&__main-text {
 			font-size: 3.4rem;
@@ -559,7 +593,13 @@ input[type="radio"] {
 	}
 
 	.aboutme {
+
+		&__main-text {
+			padding-left: 4rem;
+		}
+
 		&__text {
+			padding-left: 4rem;
 			max-width: none;
 			width: 60%;
 		}
