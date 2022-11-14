@@ -63,11 +63,11 @@ body {
 		&:hover {
 			color: #ff8d83;
 		}
-	}	
+	}
 
 	ul .active a {
 		color: #ea8c83;
-	}	
+	}
 
 	&__hamburger {
 		display: none;
@@ -80,13 +80,11 @@ body {
 		margin: 0.5rem auto;
 		background-color: black;
 	}
-	
 }
-
 
 .hero {
 	background-color: rgb(255, 255, 255);
-	margin-top: 7rem;	
+	margin-top: 7rem;
 
 	&__section {
 		padding: 0 2rem;
@@ -97,7 +95,7 @@ body {
 		flex-direction: column;
 		background-color: #fafafb;
 		border-radius: 2rem;
-		overflow: hidden;		
+		overflow: hidden;
 	}
 
 	&__info {
@@ -114,7 +112,7 @@ body {
 	}
 
 	.typed-cursor {
-		color: #ea8c82;;
+		color: #ea8c82;
 	}
 
 	&__welcome-text {
@@ -152,13 +150,13 @@ body {
 			position: relative;
 			top: 2px;
 			right: 2px;
-			width: 18px;				
+			width: 18px;
 		}
 
 		&--see {
 			padding: 1.5rem 2rem;
 			color: #0d1321;
-			border-radius: 1.6rem;		
+			border-radius: 1.6rem;
 		}
 	}
 
@@ -199,7 +197,7 @@ body {
 		width: 100%;
 		height: 1px;
 		background-color: #e0e2ef;
-	}	
+	}
 }
 
 .aboutme {
@@ -208,7 +206,7 @@ body {
 	}
 
 	&__main {
-		padding: 5rem 2rem;		
+		padding: 5rem 2rem;
 	}
 
 	&__main-text {
@@ -243,7 +241,7 @@ body {
 
 .portfolio {
 	&__section {
-		background-color: white;		
+		background-color: white;
 	}
 
 	&__main {
@@ -260,7 +258,7 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 100%;		
+		width: 100%;
 		height: 50px;
 		margin-bottom: 2rem;
 	}
@@ -283,8 +281,8 @@ body {
 
 		&:hover {
 			color: #0d1321;
-		}			
-	}	
+		}
+	}
 
 	&__content {
 		display: none;
@@ -315,10 +313,8 @@ body {
 		&--company {
 			font-size: 1.8rem;
 			font-weight: bold;
-			
 		}
 	}
-
 }
 
 .slider {
@@ -339,7 +335,6 @@ body {
 	color: #444;
 }
 
-
 input[type="radio"] {
 	display: none;
 }
@@ -356,7 +351,6 @@ input[type="radio"] {
 #other:checked ~ .navi label.other {
 	color: #0d1321;
 }
-
 
 .contact {
 	background-color: #fbc0ba;
@@ -397,7 +391,7 @@ input[type="radio"] {
 		opacity: 1;
 	}
 
-	&__btn {	
+	&__btn {
 		margin-top: 2rem;
 		margin-left: auto;
 		padding: 1.5rem 2rem;
@@ -465,12 +459,11 @@ input[type="radio"] {
 			min-width: 250px;
 		}
 
-		&__btn {	
-
+		&__btn {
 			&--hire {
-				margin-bottom: 0;	
-				margin-right: 1rem;			
-			}			
+				margin-bottom: 0;
+				margin-right: 1rem;
+			}
 		}
 	}
 
@@ -487,7 +480,6 @@ input[type="radio"] {
 	}
 
 	.portfolio {
-
 		&__main-text {
 			font-size: 3rem;
 		}
@@ -497,14 +489,12 @@ input[type="radio"] {
 		}
 
 		&__description {
-	
 			&--task {
 				font-size: 1.6rem;
 			}
-	
+
 			&--company {
-				font-size: 1.8rem;		
-				
+				font-size: 1.8rem;
 			}
 		}
 	}
@@ -547,14 +537,12 @@ input[type="radio"] {
 	}
 
 	.portfolio {
-		
-		&__navi {		
-			max-width: 500px;		
+		&__navi {
+			max-width: 500px;
 		}
 
-		&__navi-item {			
+		&__navi-item {
 			justify-content: flex-start;
-					
 		}
 	}
 
@@ -600,7 +588,6 @@ input[type="radio"] {
 	}
 
 	.aboutme {
-
 		&__main-text {
 			padding-left: 4rem;
 		}
